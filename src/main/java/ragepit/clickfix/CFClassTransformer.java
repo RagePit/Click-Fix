@@ -24,7 +24,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 
-public class TestMod implements net.minecraft.launchwrapper.IClassTransformer {
+public class CFClassTransformer implements net.minecraft.launchwrapper.IClassTransformer {
 
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {

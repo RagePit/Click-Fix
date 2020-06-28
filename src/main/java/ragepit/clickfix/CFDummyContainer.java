@@ -19,13 +19,13 @@ import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import java.lang.reflect.Field;
 import java.util.Collections;
 
-public class ClickFix extends DummyModContainer {
+public class CFDummyContainer extends DummyModContainer {
 
     public static final String MOD_ID = "clickfix";
     public static final String MOD_NAME = "ClickFix";
     public static final String VERSION = "1.1";
 
-    public ClickFix() {
+    public CFDummyContainer() {
         super(new ModMetadata());
         ModMetadata meta = getMetadata();
         meta.modId = MOD_ID;
@@ -34,8 +34,6 @@ public class ClickFix extends DummyModContainer {
         meta.authorList = Collections.singletonList("RagePit");
         
     }
-
-
     
 	@Override
 	public boolean registerBus(EventBus bus, LoadController controller) {
@@ -43,23 +41,10 @@ public class ClickFix extends DummyModContainer {
 		return true;
 	}
 
-	@Subscribe
-	public void modConstruction(FMLConstructionEvent evt){
-
-	}
 
 	@Subscribe
-	public void init(FMLInitializationEvent evt) throws IllegalArgumentException, IllegalAccessException {
+	public void init(FMLInitializationEvent evt) {
 	//	MinecraftForge.EVENT_BUS.register(new EventHandler());
 	}
 	
-	@Subscribe
-	public void preInit(FMLPreInitializationEvent evt) {
-
-	}
-
-	@Subscribe
-	public void postInit(FMLPostInitializationEvent evt) {
-
-	}
 }

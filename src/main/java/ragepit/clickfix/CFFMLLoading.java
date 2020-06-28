@@ -6,16 +6,16 @@ import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 
 @MCVersion(value = "1.8.9")
-public class Patching implements IFMLLoadingPlugin {
+public class CFFMLLoading implements IFMLLoadingPlugin {
 	
     @Override
     public String[] getASMTransformerClass() {
-        return new String[]{TestMod.class.getName()};
+        return new String[]{CFClassTransformer.class.getName()};
     }
 
     @Override
     public String getModContainerClass() {
-        return ClickFix.class.getName();
+        return CFClassTransformer.class.getName();
     }
 
     @Override
