@@ -50,7 +50,7 @@ public class ClickFix extends DummyModContainer {
 
 	@Subscribe
 	public void init(FMLInitializationEvent evt) throws IllegalArgumentException, IllegalAccessException {
-		MinecraftForge.EVENT_BUS.register(new EventHandler());
+	//	MinecraftForge.EVENT_BUS.register(new EventHandler());
 	}
 	
 	@Subscribe
