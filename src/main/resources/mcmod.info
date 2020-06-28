@@ -1,0 +1,16 @@
+[
+{
+  "modid": "clickfix",
+  "name": "ClickFix",
+  "description": "Changes Minecraft.class to not change leftClickCounter on left click.",
+  "version": "1.09",
+  "mcversion": "1.8.9",
+  "url": "github.com/shackl10",
+  "updateUrl": "",
+  "authorList": ["RagePit"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
