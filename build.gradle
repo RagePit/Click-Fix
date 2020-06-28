@@ -12,7 +12,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.1"
+version = "1.09"
 group= "ragepit.clickfix"
 archivesBaseName = "ClickFix"
 
@@ -47,6 +47,6 @@ processResources
 
 jar {
     manifest {
-        attributes "FMLCorePlugin": "ragepit.clickfix.Patching", "ModSide": "CLIENT"
+        attributes "FMLCorePlugin": "ragepit.clickfix.CFLoader", "ModSide": "CLIENT"
     }
 }

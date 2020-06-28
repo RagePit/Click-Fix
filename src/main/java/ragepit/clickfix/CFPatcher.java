@@ -24,7 +24,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 
-public class CFClassTransformer implements net.minecraft.launchwrapper.IClassTransformer {
+public class CFPatcher implements net.minecraft.launchwrapper.IClassTransformer {
 
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
@@ -71,7 +71,7 @@ public class CFClassTransformer implements net.minecraft.launchwrapper.IClassTra
 	            
 	            if ((m.name.equals(targetMethodName) && m.desc.equals("()V")))
 	            {
-	                System.out.println("********* Inside target method! " + m.name);
+	                System.out.println("********* INSIDE TARGET METHOD! " + m.name);
 	                
 	                
 	                AbstractInsnNode currentNode = null;
