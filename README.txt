@@ -6,7 +6,7 @@ Do not blame me if you get banned on any server for this.
 
 Basically just goes into net.minecraft.client.Minecraft and clears two lines out of the bytecode so that leftClickCounter is not set to 10 every time you miss a swing.
 
-
+This is essence disables the client side cps cap
 -----------------------------------------
 
 Read InstallGuide.txt on how to install forge and the mod
